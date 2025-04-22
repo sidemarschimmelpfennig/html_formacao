@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cadastro</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        body{
+            background-color: rgb(136, 121, 91);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+        .container h1{
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            margin-top: 6rem;
+        }
+        .container form{
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #222;
+            border-radius: 1rem;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+        .form input{
+            background-color: #fff;
+            padding: 0.5rem;
+            margin: 1rem;
+        }
+
+        .form button {
+            
+            margin: 1rem;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bolder;
+            font-size: 1rem;
+            background-color: #fb3;
+        }
+        .form button:hover {
+            cursor: pointer;
+            color: #fff;
+            background-color: #090707;
+        }
+        @media (max-width: 480px) {
+            .container{
+                max-width: 360px;
+            }
+        }
+        @media  (max-width: 720px) {
+            .container{
+                padding: 1rem;
+                max-width: 550px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario  de Cadastro</h1>
+        <form action="https://pt-br.facebook.com/" method="post" class="form" name="signup">
+            <strong>Nome:</strong>  <input type="text" name="name" id="name">
+            <strong>Idade:</strong> <input type="number" name="age" id="age">
+            <strong>Senha:</strong> <input type="password" name="password" id="password">
+            <button type="submit" >Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
