@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Titulo da Pagina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Esqueleto</title>
 </head>
 <body>
-
-    <h1>Titulo</h1>
-    <p>Paragrafo</p>
-        <br>
-        <br>
-    <p style="margin: 2rem;">  
-        O  <strong style="padding: 10px;">< !DOCTYPE html > </strong>   declaração define que este documento é um documento HTML5. <br>
-        O elemento  <strong style="padding: 10px;">< html ></strong>   é o elemento raiz de uma página HTML." <br>
-        O elemento  <strong style="padding: 10px;">< head ></strong>  contém informações meta sobre a página HTML." <br>
-        O elemento  <strong style="padding: 10px;">< title ></strong>  especifica um título para a página HTML (que é exibido na barra de título do navegador ou na aba da página)."<br>
-        O elemnto  <strong style="padding: 10px;">< body > </strong> define o corpo do documento e é um container para todas  as informaçoes  visiveis, como títulos, parágrafos, imagens, hiperlinks, tabelas, listas, etc. <br> 
-        O elemento  <strong style="padding: 10px;"> < h1 ></strong>  define um titulo grande <br>
-        O elemento  <strong style="padding: 10px;">< p ></strong>  define um paragrafo 
-    </p>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="normal" onclick="this.classList.toggle('ativa')" >
+                    <a >&#9776; &nbsp;  Textos</a>
+                    <ul class="type_texts" >
+                        <li><a href="./titulos.html">Titulos</a></li>
+                        <li><a href="./citacoes.html">Citações</a></li>
+                        <li><a href="./paragrafos.html">Paragrafos</a></li>
+                        <li><a href="./tipos.html">Tipos</a></li>
+                    </ul> 
+                </li>
+                <li class="normal"><a href="./esqueleto.html"><abbr title="O esqueleto base do html">Esqueleto base</abbr></a></li>
+                <li class="normal"><a href="./inputs.html"><abbr title="Disponibiliza todos os tipos de inputs do html">Inputs</abbr></a></li>
+                <li class="normal"><a href="./buttons.html"><abbr title="Disponibiliza todos os tipos de botões do html">Buttons</abbr></a></li>
+                <li class="normal"><a href="./images.html"><abbr title="Disponibiliza todos os modos de imagens do html">Images</abbr></a></li>
+                <li class="normal"><a href="./links.html" target="_blank"><abbr title="Disponibiliza todos os tipos de links e suas propriedades">Links</abbr></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <pre>      
+    &lt;!DOCTYPE html&gt;<br>
+    &lt;html lang="pt-br"&gt;<br>
+        &lt;head&gt;<br>
+            &lt;meta charset="UTF-8"&gt;<br>
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+            &lt;title&gt;Exemplo HTML&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+            &lt;h1&gt;Olá, mundo!&lt;/h1&gt;<br>
+            &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;<br>
+        &lt;/body&gt;<br>
+    &lt;/html&gt;
+            </pre>
+        </div>
+    </div>
 </body>
 </html>
