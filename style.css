@@ -71,6 +71,9 @@ html{
             border-bottom-right-radius: 9em 4em;
         }
     }
+.baby-yoda:hover{
+    cursor: pointer;
+}
 html{
     height: 100%;
     display: flex;
