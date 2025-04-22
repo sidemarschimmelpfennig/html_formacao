@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <img src="caminho da imagem" width="largura" height="altura"   alt="" sizes="" srcset="">
+        <img 
+            src="imagem-padrao.jpg" 
+            srcset="imagem-pequena.jpg 480w, imagem-media.jpg 800w, imagem-grande.jpg 1200w" 
+            sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" 
+            alt="Descrição da imagem"
+        >
+        <!-- 
+        src: caminho padrão da imagem
+            (carregada se o navegador não suportar srcset ou não encontrar uma correspondência).
+
+        srcset: 
+            lista de imagens alternativas com suas larguras (ex: 480w, 800w) ou resoluções (ex: 1x, 2x).
+
+        sizes (opcional): 
+            define quanto espaço (em pixels) a imagem ocupará em diferentes larguras de tela.-->
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #ccc;
+        }
+        .form {
+            margin: 0 auto;
+            background-color: cadetblue;
+            color: white;
+            padding: 20px;
+            border-radius: 2rem ; 
+        }
+        .col{
+            justify-content: center;
+            flex-direction: column;
+        }
+        .col-bar{
+            display: flex;
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <form class="form">
+            <h1>Inputs types</h1>
+            <br><br><br>
+            <div class="col-bar">
+                <div class="col">
+                    <label>button : </label><input type="button" value="button"><br><br>
+                    <label >checkbox : </label> <input type="checkbox" name="checkbox" id=""><br><br>
+                    <label>color : </label><input type="color" name="color" id=""><br><br>
+                    <label>date : </label><input type="date" name="date" id=""><br><br>
+                    <label>datetime : </label><input type="datetime" name="" id=""><br><br>
+                    <label>datetime-local : </label><input type="datetime-local" name="datetime-local" id=""><br><br>
+                    <label>email : </label><input type="email" name="email" id=""><br><br>
+                    <label>file : </label><input type="file" name="file" id=""><br><br>
+                    <label>hidden : </label><input type="hidden"  name="hidden" value="someValue"><br><br>
+                    <label>image : </label><input type="image" src="submit.gif" alt="Submit" style="float:right" width="48" height="48"><br><br>
+                    <label>month : </label><input type="month" name="month" id=""><br><br>
+                    <label>number : </label><input type="number" name="number" id=""><br><br>
+                </div>
+                <div class="col">
+                    <label>password : </label><input type="password" name="password" id=""><br><br>
+                    <label>radio : </label><input type="radio" name="radio" id=""><br><br>
+                    <label>range : </label><input type="range" name="range" id=""><br><br>
+                    <label>reset : </label><input type="reset" value="resetar"><br><br>
+                    <label>search : </label><input type="search" name="search" id=""><br><br>
+                    <label>submit : </label><input type="submit" value="submit"><br><br>
+                    <label>tel : </label><input type="tel" name="tel" id=""><br><br>
+                    <label>text : </label><input type="text" name="text" id=""><br><br>
+                    <label>time : </label><input type="time" name="time" id=""><br><br>
+                    <label>url : </label><input type="url" name="url" id=""><br><br>
+                    <label>week : </label><input type="week" name="week" id=""><br><br>
+                </div>
+            </div>
+            
+
+        </form>
+    </div>
+
+</body>
+</html>
