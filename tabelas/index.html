@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* table tr:nth-child(even){
+            background-color: aquamarine;
+        }
+        table tr:hover td{
+            background-color: gray;
+            cursor: pointer;
+        }*/
+        table{
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.26);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.26);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.26);
+            border: solid 1px gray;
+        }
+        table thead th {
+            background-color: black;
+            color: white;
+            padding-bottom: 5px;
+        }
+        table tfoot td{
+            background-color: lightgray;
+        }
+        table tbody tr td{
+            padding-left: 10px;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: #f1f1f1;
+        }
+        table tbody tr:hover td{
+            background-color: #E9f1f1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--table sumary="idade sera uma descrição do resumo"  border="1" width="200" align="center" cellspacing="15" cellpadding="40"-->
+    <table width="250" align="center"  cellspacing="0">
+        <!--<caption>Valor dos Produs</caption>-->
+            
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        Minha tabela
+                    </th>
+                </tr>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Produto 1</td>
+                    <td>4,00</td>
+                </tr>
+                <tr>
+                    <td>Produto 2</td>
+                    <td>4,00</td>
+                </tr>
+                <tr>
+                    <td>Produto 3</td>
+                    <td>4,00</td>
+                </tr>
+                <tr>
+                    <td>Produto 1</td>
+                    <td>4,00</td>
+                </tr>
+                <tr>
+                    <td>Produto 2</td>
+                    <td>4,00</td>
+                </tr>
+                <tr>
+                    <td>Produto 3</td>
+                    <td>4,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>12,00</td>
+                </tr>
+            </tfoot>
+    </table>
+</body>
+</html>

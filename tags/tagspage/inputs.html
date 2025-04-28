@@ -3,41 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-           
-        }
-        .container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            height: 100vh;
-            width: 100%;
-            background-color: #ccc;
-        }
-        .form {
-            margin: 0 auto;
-            background-color: cadetblue;
-            color: white;
-            padding: 20px;
-            border-radius: 2rem ; 
-        }
-        .col{
-            justify-content: center;
-            flex-direction: column;
-        }
-        .col-bar{
-            display: flex;
-        }
-    </style>
+    <!--link rel="stylesheet" href="../style.css"-->
+    <title>Inputs</title>
 </head>
-<body >
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="normal" onclick="this.classList.toggle('ativa')" >
+                    <a >&#9776; &nbsp;  Textos</a>
+                    <ul class="type_texts" >
+                        <li><a href="./titulos.html">Titulos</a></li>
+                        <li><a href="./citacoes.html">Citações</a></li>
+                        <li><a href="./paragrafos.html">Paragrafos</a></li>
+                        <li><a href="./tipos.html">Tipos</a></li>
+                    </ul> 
+                </li>
+                <li class="normal"><a href="./esqueleto.html"><abbr title="O esqueleto base do html">Esqueleto base</abbr></a></li>
+                <li class="normal"><a href="./inputs.html"><abbr title="Disponibiliza todos os tipos de inputs do html">Inputs</abbr></a></li>
+                <li class="normal"><a href="./buttons.html"><abbr title="Disponibiliza todos os tipos de botões do html">Buttons</abbr></a></li>
+                <li class="normal"><a href="./images.html"><abbr title="Disponibiliza todos os modos de imagens do html">Images</abbr></a></li>
+                <li class="normal"><a href="./links.html" target="_blank"><abbr title="Disponibiliza todos os tipos de links e suas propriedades">Links</abbr></a></li>
+                
+            </ul>
+        </nav>
+    </header>
     <div class="container">
+        
+        <!--div class="content">
+            <h1>Tipos de Input</h1>
+            <pre class="tags">
+                <p><strong>&lt;input type="button" value="button"&gt; </strong>= <input type="button" value="button"></p>
+                <p><strong>&lt;input type="checkbox" name="checkbox" id=""&gt;</strong> = <input type="checkbox" name="checkbox" id="checkbox"> Exemplo</input></p>
+                <p><strong>&lt;input type="color" name="color" id=""&gt;</strong> = <input type="color" name="color" id="color"></p>
+                <p><strong>&lt;input type="date" name="date" id=""&gt; </strong> = <input type="date" name="date" id="data"></p>
+                <p><strong>&lt;input type="datetime" name="" id=""&gt;</strong> = <input type="datetime" name="date-time" id="date-time"></p>
+                <p><strong>&lt;input type="datetime-local" name="datetime-local" id=""&gt;</strong> = <input type="datetime-local" name="" id=""></p>                
+                <p><strong>&lt;input type="email" name="email" id=""&gt;</strong> = <input type="email" name="" id=""></p>              
+                <p><strong>&lt;input type="file" name="file" id=""&gt;</strong> = <input type="file" name="" id=""></p>                
+                <p><strong>&lt;input type="hidden" name="hidden" value="someValue"&gt;</strong></p>                
+                <p><strong>&lt;input type="image" src="submit.gif" alt="Submit" style="float:right" width="48" height="48"&gt;</strong> = <input type="image" src="submit.gif" height="20" width="20" alt=""></p>                
+                <p><strong>&lt;input type="month" name="month" id=""&gt;</strong> <input type="month" name="" id=""></p>              
+                <p><strong>&lt;input type="number" name="number" id=""&gt;</strong> <input type="number" name="" id=""></p>
+            
+            </pre> 
+        </div-->
         <form class="form">
             <h1>Inputs types</h1>
             <br><br><br>
@@ -50,16 +60,16 @@
                     <label>datetime : </label><input type="datetime" name="" id=""><br><br>
                     <label>datetime-local : </label><input type="datetime-local" name="datetime-local" id=""><br><br>
                     <label>email : </label><input type="email" name="email" id=""><br><br>
-                    <label>file : </label><input type="file" name="file" id=""><br><br>
-                    <label>hidden : </label><input type="hidden"  name="hidden" value="someValue"><br><br>
-                    <label>image : </label><input type="image" src="submit.gif" alt="Submit" style="float:right" width="48" height="48"><br><br>
+                    <label>file : </label><input type="file" name="file" id="" multiple><br><br>
+                    <label>hidden : </label><input type="hidden"  name="hidden" value="someValue"><br><br><!-- Enviar dado de modo oculto  -->
+                    <label>image : </label><input type="image" src="submit.gif" alt="Submit" width="48" height="48"><br><br>
                     <label>month : </label><input type="month" name="month" id=""><br><br>
-                    <label>number : </label><input type="number" name="number" id=""><br><br>
+                    <label>number : </label><input type="number" name="number" id="" min="" max="" step=""><br><br>
                 </div>
                 <div class="col">
                     <label>password : </label><input type="password" name="password" id=""><br><br>
-                    <label>radio : </label><input type="radio" name="radio" id=""><br><br>
-                    <label>range : </label><input type="range" name="range" id=""><br><br>
+                    <label>radio : </label><input type="radio" name="radio" id=""><input type="radio" name="radio" id=""><br><br>
+                    <label>range : </label><input type="range" name="range" id="" min="0" max="100" value="70" ><br><br>
                     <label>reset : </label><input type="reset" value="resetar"><br><br>
                     <label>search : </label><input type="search" name="search" id=""><br><br>
                     <label>submit : </label><input type="submit" value="submit"><br><br>
@@ -74,6 +84,5 @@
 
         </form>
     </div>
-
 </body>
 </html>

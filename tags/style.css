@@ -17,6 +17,11 @@ header{
     background-color: #ffbb33;
     height: 4rem;
     align-items: center;
+
+}
+.normal {
+    list-style: none;
+    margin: 1rem;
 }
 .normal > a{
     text-decoration: none;
@@ -26,15 +31,20 @@ header{
     background-color: #222;
     border-radius: 0.5rem;
     padding: 0.5rem  1.5rem 0.5rem 1.5rem;
-
     &&:hover{
         cursor: pointer;
         background-color: #2222228a;
     }
+
+    
+    
+
+
 }
 .normal abbr{
     text-decoration: none;
 }
+
 .type_texts{
     visibility: hidden;
 }
@@ -49,6 +59,7 @@ header{
     
     max-width: 4rem;
     border-radius: 0.5rem 0.5rem 1rem 1rem;
+
     
 }
 .type_texts li  a{
@@ -69,14 +80,9 @@ header{
     padding: 0.3rem;
 }
 
-.navbar .normal {
-    list-style: none;
-    padding: 1rem;
-    
-}
 .container{
     display: flex;
-    height: calc(100vh - 4rem);
+    min-height: calc(100vh - 4rem);
     background-color: #444444;
     align-items: center;
     
@@ -104,3 +110,47 @@ header{
     align-items: normal;
 
 }
+
+
+@media (max-width: 900px) {
+    .normal {
+         margin: 0;
+         font-size: small;
+        padding: 0.3rem;
+
+    }
+    .normal li {
+        
+        flex-direction: row-reverse;
+
+        z-index: 1;
+    }
+    .content{
+        margin: 0 auto;
+        
+    }
+    .container{
+        padding-top: 5rem;
+        min-height: calc(100vh- 4rem);
+        flex-direction: column;
+    }
+
+    .container > form {
+        min-height: calc(100vh- 4rem);
+    }
+
+ }
+
+ .tags > p > strong{
+    display: flex;
+    flex-direction: column-reverse; 
+    background-color: #444444;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    max-width: 45rem;  
+ }
+
+ .tags > p > input{
+    padding: .5rem;
+ }
+
